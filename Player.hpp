@@ -5,7 +5,8 @@
 #include <stdexcept>
 #include <vector>
 #include <string>
-
+#include "Game.hpp"
+#pragma once
 #ifndef CPP_EX4_A_PLAYER_H
 #define CPP_EX4_A_PLAYER_H
 
@@ -13,24 +14,24 @@
 namespace coup {
     using namespace std;
 
-    class Game {
-    private:
-        int p;
-    public:
-        Game();
-
-        ~Game();
-
-        vector <string> players();
-
-        int turn();
-    };
+//    class Game {
+//    private:
+//        int p;
+//    public:
+//        Game();
+//
+//        ~Game();
+//
+//        vector <string> players();
+//
+//        int turn();
+//    };
 
     class Player {
-    private:
+    protected:
         string name;
     public:
-        Player(Game g,string name);
+        Player(Game& g,string name);
         ~Player();
         void income();
         void foreign_aid();

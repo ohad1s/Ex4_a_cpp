@@ -7,9 +7,10 @@
 #include "Ambassador.hpp"
 #include "Captain.hpp"
 #include "Contessa.hpp"
+#include "Game.hpp"
 
 namespace coup {
-    Player::Player(Game g, string name) {
+    Player::Player(Game& g, string name) {
 }
 
     Player::~Player() {}
@@ -27,20 +28,20 @@ int Player::coins() {
     return 5;
 }
 
-    Game::Game(){}
-
-    Game::~Game(){}
-
-    vector <string> Game::players() {
-        vector <string> pl;
-        for (int i = 1; i <= 5; i++) {
-            pl.push_back("Yossi");
-        }
-        return pl;
-    }
-
-    int Game::turn() {
-        return 1;
-    }
+//    Game::Game(){}
+//
+//    Game::~Game(){}
+//
+//    vector <string> Game::players() {
+//        vector <string> pl;
+//        for (int i = 1; i <= 5; i++) {
+//            pl.push_back("Yossi");
+//        }
+//        return pl;
+//    }
+//
+//    int Game::turn() {
+//        return 1;
+//    }
 
 }
